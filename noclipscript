@@ -1,0 +1,8 @@
+local Player = game:GetService("Players").LocalPlayer
+while game:GetService("RunService").Stepped:Wait() do
+    local Character = Player.Character or Player.CharacterAdded:Wait() 
+    Character.UpperTorso.CanCollide = false
+    Character.LowerTorso.CanCollide = false
+    Character.Head.CanCollide = false
+    Character.HumanoidRootPart.CanCollide = false
+end
